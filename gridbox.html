@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridBox</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        /* .container{
+            display: flex;
+            width: 100vw;
+            flex-wrap: wrap;
+        } */
+        .container{
+            /* height: 500px; */
+            display: grid;
+            /* grid-template-columns: 300px 200px 100px auto; */
+            /* grid-template-columns: 100px auto 100px; */
+            /* grid-template-columns: repeat(5, 100px) auto; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(3, 1fr) repeat(3, 2fr); */
+            /* grid-template-columns: 1fr 1fr 1fr 2fr 2fr 2fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 200px 300px;
+            /* column-gap: 10px;
+            row-gap: 20px; */
+            gap: 10px;
+        }
+        .box {
+            background-color: burlywood;
+            border: 1px solid brown;
+        }
+        #box-1{
+            grid-column: span 3;
+            background-color: lightgreen;
+        }
+        #box-5, #box-8{
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">Box-1</div>
+        <div class="box" id="box-2">Box-2</div>
+        <div class="box" id="box-3">Box-3</div>
+        <div class="box" id="box-4">Box-4</div>
+        <div class="box" id="box-5">Box-5</div>
+        <div class="box" id="box-6">Box-6</div>
+        <div class="box" id="box-7">Box-7</div>
+        <div class="box" id="box-8">Box-8</div>
+        <div class="box" id="box-9">Box-9</div>
+        <div class="box" id="box-10">Box-10</div>
+        <div class="box" id="box-11">Box-11</div>
+        <div class="box" id="box-12">Box-12</div>
+        <div class="box" id="box-13">Box-13</div>
+        <div class="box" id="box-14">Box-14</div>
+        <div class="box" id="box-15">Box-15</div>
+        <div class="box" id="box-16">Box-16</div>
+        <div class="box" id="box-17">Box-17</div>
+        <div class="box" id="box-18">Box-18</div>
+        <div class="box" id="box-19">Box-19</div>
+        <div class="box" id="box-20">Box-20</div>
+    </div>
+</body>
+
+</html>
